@@ -1,4 +1,4 @@
-import Section, { SectionContent } from '../section/Section';
+import Section, { SectionContent } from '@/components/section/Section';
 
 import PropTypes from 'prop-types';
 

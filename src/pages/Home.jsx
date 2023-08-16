@@ -7,7 +7,9 @@ import {
   EffectFade, Mousewheel, Pagination
 } from 'swiper/modules';
 
-import { Welcome } from '../components/home-section'
+import { Welcome } from '@/components/home-section';
+
+
 const Home = () => {
   return (
     <>
