@@ -1,0 +1,9 @@
+@use '../../../scss/' as *;
+
+.welcome {
+  color: $white !important;
+
+  &__content {
+    @include flex(center, center);
+  }
+} 
