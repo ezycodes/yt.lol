@@ -7,7 +7,7 @@ import {
   EffectFade, Mousewheel, Pagination
 } from 'swiper/modules';
 
-import { Welcome } from '@/components/home-section';
+import { Champion, Welcome } from '@/components/home-section';
 
 
 const Home = () => {
@@ -27,7 +27,7 @@ const Home = () => {
           {({ isActive }) => <Welcome isActive={isActive} />}
         </SwiperSlide>
         <SwiperSlide>
-          slide 2
+          {({ isActive }) => <Champion isActive={isActive} />}
         </SwiperSlide>
       </Swiper>
     </>

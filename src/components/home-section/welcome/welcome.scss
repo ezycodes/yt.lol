@@ -1,9 +1,65 @@
 @use '@/scss/' as *;
 
 .welcome {
-  color: $white !important;
+  // height: 100vh;
+  // min-height: 100vh;
+  // max-height: 100vh;
+  // border: 1px solid blue;
 
   &__content {
     @include flex(center, center);
+    // border: 1px solid red;
+  }
+
+  &__info,
+  &__img {
+    width: 50%;
+    height: 100%;
+    // border: 1px solid red;
+  }
+
+  &__info {
+    // border: 1px solid red;
+    @include flex(flex-start, flex-end);
+    // padding-top: $header-height;
+    
+    &__content {
+      padding-left: 15rem;
+      
+      .description {
+        font-size: 1rem;
+        
+      }
+
+      .btns > * ~ * {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &__img { 
+    @include flex(flex-end, flex-start);
+    // height: 100vh;
+    // border: 1px solid red;
+  
+    &__slide {
+      // border: 1px solid blue;
+      // height: calc(100vh - $header-height);
+      // @include flex(center, center);
+      // height: 100vh;
+      // width: fit-content;
+      height: 915px;
+      width: 915px;
+      overflow: hidden;
+
+      img {
+        // height: calc(100vh - $header-height);
+        // border: 1px solid yellow;
+      }
+
+      canvas {
+        display: block;
+      }
+    }
   }
 } 

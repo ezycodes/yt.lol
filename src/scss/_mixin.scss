@@ -3,3 +3,30 @@
   align-items: $align-item;
   justify-content: $justify-content;
 }
+
+
+
+// breakpoints
+@mixin bp-desktop {
+
+    // 1670px
+    @media (min-width: $desktop-width) {
+        @content;
+    }
+}
+
+@mixin bp-tablet {
+
+    // 1024px
+    @media (min-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin bp-mobile {
+
+    // 600px
+    @media (min-width: $mobile-width) {
+        @content;
+    }
+}
